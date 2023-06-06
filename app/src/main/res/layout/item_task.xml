@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#f2cc8f"
+        android:fontFamily="@font/aclonica"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/deleteButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Text"
+        />
+
+    <ImageView
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/taskName"
+        app:layout_constraintBottom_toBottomOf="@+id/taskName"
+        android:layout_margin="10dp"
+        android:padding="12dp"
+        android:background="#81b29a"
+        android:src="@drawable/baseline_delete_24"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
